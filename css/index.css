@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input {
+    appearance: none;
+    outline: none;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 330px;
+    /*height: 424px;*/
+    margin: 65px 0 0 65px;
+    border-radius: 22px;
+    border: 1px solid #DCDCDC;
+    box-shadow: -11px 14px 96px -53px rgba(17, 76, 115, 0.35);
+}
+
+.header {
+    width: 282px;
+    height: 76px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__avatar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 42px;
+    height: 42px;
+}
+
+.header__avatar-online {
+    position: absolute;
+    z-index: 1;
+    padding: 30px 0 0 30px;
+    width: 12px;
+    height: 12px;
+}
+
+.header__name {
+    position: relative;
+    margin-left: 13px;
+    width: 92px;
+    height: 34px;
+}
+
+.header__name-nick {
+    width: 92px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.header__name-online {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.header__btn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-left: 121px;
+}
+
+.main {
+    position: relative;
+    width: 330px;
+    height: 348px;
+    background: #FFFFFF;
+    box-shadow: -11px 14px 96px -53px rgba(17, 76, 115, 0.35);
+    border-radius: 0 0 22px 22px;
+}
+
+.main__chat {
+    position: relative;
+    width: 282px;
+    height: 281px;
+    border-top: 1px solid #DCDCDC;
+    margin-left: 24px;
+}
+
+.main__sms-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0 0 88px;
+    width: 194px;
+    height: 54px;
+    background: #2881C1;
+    box-shadow: -11px 14px 96px -53px rgba(17, 76, 115, 0.35);
+    border-radius: 22px 22px 0 22px;
+}
+
+
+.main__sms-text1 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 133.1%;
+    color: #FFFFFF;
+}
+
+.main__sms-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    width: 194px;
+    height: 88px;
+    background: #EEEFF5;
+    box-shadow: -11px 14px 96px -53px rgba(17, 76, 115, 0.35);
+    border-radius: 22px 22px 0 22px;
+}
+
+.main__sms-text2 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 133.1%;
+    color: #000000;
+}
+
+.main__sms-time {
+    position: relative;
+    width: 30px;
+    height: 15px;
+    margin: 2px 0 0 16px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 133.1%;
+    color: #767676;
+}
+
+.main__sms-3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 219px;
+    height: 71px;
+    margin: 4px 0 0 63px;
+    background: #2881C1;
+    box-shadow: -11px 14px 96px -53px rgba(17, 76, 115, 0.35);
+    border-radius: 22px 22px 0 22px;
+}
+
+.main__sms-text3 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 133.1%;
+    color: #FFFFFF;
+}
+
+.main__sms-read {
+    position: relative;
+    width: 59px;
+    height: 15px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 133.1%;
+    color: #767676;
+    margin: 2px 0 0 79px;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 282px;
+    height: 38px;
+    margin-bottom: 22px;
+    padding-left: 24px;
+}
+
+.footer__settings {
+    width: 22px;
+    height: 22px;
+    color: #666;
+}
+
+.footer__textarea {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 248px;
+    height: 38px;
+    margin-left: 12px;
+    background: #EEEFF5;
+    border-radius: 66px;
+}
+
+.footer__textarea-default {
+    width: 137px;
+    height: 18px;
+    margin: 10px 0 10px 16px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    border: 0;
+    background-color: #EEEFF5;
+}
+
+.footer__textarea-send {
+    width: 22px;
+    height: 22px;
+    margin-left: 57px;
+}
+
+.modal {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.close {
+    display: none;
+}
